@@ -1,4 +1,4 @@
-@text,,6,6,150,20,2,left,top,auto,#000000 0,<span size="large">🔍︎</span>
+#@text,,6,6,150,20,2,left,top,auto,#000000 0,<span size="large">🔍︎</span>
 @search,,24,3,150,20,2,left,top,auto,#000000 0,Dig. P/ Buscar
 
 ^sep()
