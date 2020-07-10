@@ -56,16 +56,16 @@ tutorial,kitty -T 'man jgmenututorial' -e man jgmenututorial
 Comandos,^checkout(edit2),subl3
 Dotfiles,^checkout(edit3),subl3
 ^tag(edit2)
-Select 				,/home/chclxds/Downloads/dotfiles/winfuncs.sh select,
-Tile                ,/home/chclxds/Downloads/dotfiles/winfuncs.sh tile,
-Tile two            ,/home/chclxds/Downloads/dotfiles/winfuncs.sh tiletwo,
-Tile two left       ,/home/chclxds/Downloads/dotfiles/winfuncs.sh tiletwol,
-Tile two right      ,/home/chclxds/Downloads/dotfiles/winfuncs.sh tiletwor,
-Tile three          ,/home/chclxds/Downloads/dotfiles/winfuncs.sh tilethree,
-Tile three vertical ,/home/chclxds/Downloads/dotfiles/winfuncs.sh tilethreev,
-Stack two           ,/home/chclxds/Downloads/dotfiles/winfuncs.sh stacktwo,
-Cascade             ,/home/chclxds/Downloads/dotfiles/winfuncs.sh cascade,
-Show desktop        ,/home/chclxds/Downloads/dotfiles/winfuncs.sh showdesktop,
+Select 				,~/dotfiles/winfuncs.sh select,
+Tile                ,~/dotfiles/winfuncs.sh tile,
+Tile two            ,~/dotfiles/winfuncs.sh tiletwo,
+Tile two left       ,~/dotfiles/winfuncs.sh tiletwol,
+Tile two right      ,~/dotfiles/winfuncs.sh tiletwor,
+Tile three          ,~/dotfiles/winfuncs.sh tilethree,
+Tile three vertical ,~/dotfiles/winfuncs.sh tilethreev,
+Stack two           ,~/dotfiles/winfuncs.sh stacktwo,
+Cascade             ,~/dotfiles/winfuncs.sh cascade,
+Show desktop        ,~/dotfiles/winfuncs.sh showdesktop,
 
 ^tag(edit3)
 Winfuncs.sh,subl3 ~/Downloads/dotfiles/winfuncs.sh,winfuncs
