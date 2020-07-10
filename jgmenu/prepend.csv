@@ -4,74 +4,74 @@
 ^sep()
 Run Program,xfrun4
 ^sep()
-Terminal			,kitty,utilities-terminal
-Web Browser			,firefox,firefox
+Terminal		,kitty,utilities-terminal
+Web Browser		,firefox,firefox
 File Manager		,thunar,system-file-manager
-Text Editor			,subl3,text-editor
+Text Editor		,subl3,text-editor
 Media Player		,smplayer,multimedia-player
 ^sep()
 Applications		,^checkout(apps)
 ^sep()
-Utilities			,^checkout(utilities),applications-utilities
-Places				,(jgmenu_run ob --cmd="xfce4-popup-places -p" --tag="xfce4-popup-places"),folder
-Preferences			,^checkout(bl-preferences),preferences-system
-System				,^checkout(bl-system),applications-system
+Utilities		,^checkout(utilities),applications-utilities
+Places			,(jgmenu_run ob --cmd="xfce4-popup-places -p" --tag="xfce4-popup-places"),folder
+Preferences		,^checkout(bl-preferences),preferences-system
+System			,^checkout(bl-system),applications-system
 ^sep()
 Dotfiles/Commands	,^checkout(edit),subl3
 ^sep()
-Lock Screen			,xflock4,system-lock-screen
+Lock Screen		,xflock4,system-lock-screen
 Session Logout		,xfce4-session-logout,Session Logout
 
 . /usr/share/bunsen/configs/menu-includes/help-menu
 
 ^tag(utilities)
 Back,^back()
-Aparência			,xfce4-appearance-settings
+Aparência		,xfce4-appearance-settings
 Remote Desktop		,kdeconnect-app
-Screenshot			,xfce4-screenshooter
-SSH					,bssh
+Screenshot		,xfce4-screenshooter
+SSH			,bssh
 Task Manager (htop)	,kitty -T 'htop task manager' -e htop,htop
 
 ^tag(bl-preferences)
 Back,^back()
-jgmenu				,^checkout(bl-jgmenuConfig)
-Keybinds			,^checkout(bl-xbindkeysConfig)
-Tweaks				,xfwm4-tweaks-settings,Tweaks Settings
+jgmenu			,^checkout(bl-jgmenuConfig)
+Keybinds		,^checkout(bl-xbindkeysConfig)
+Tweaks			,xfwm4-tweaks-settings,Tweaks Settings
 Notifications		,xfce4-notifyd-config,notifyconf
 Power Management	,xfce4-power-manager-settings,xfce4-power-manager-settings
 ^sep()
-Display				,xfce4-display-settings, Display Settings
+Display			,xfce4-display-settings, Display Settings
 
 jgmenu,^tag(bl-jgmenuConfig)
 Back,^back()
-Edit jgmenu			,subl3 ~/.config/jgmenu/jgmenurc,text-plain
-Edit append			,subl3 ~/.config/jgmenu/append.csv,text-plain
+Edit jgmenu		,subl3 ~/.config/jgmenu/jgmenurc,text-plain
+Edit append		,subl3 ~/.config/jgmenu/append.csv,text-plain
 Edit preppend		,subl3 ~/.config/jgmenu/prepend.csv,text-plain
 
 ^sep(Help)
-man page			,kitty -T 'man jgmenu' -e man jgmenu
-tutorial			,kitty -T 'man jgmenututorial' -e man jgmenututorial
+man page		,kitty -T 'man jgmenu' -e man jgmenu
+tutorial		,kitty -T 'man jgmenututorial' -e man jgmenututorial
 
 ^tag(edit)
-Comandos			,^checkout(edit2),subl3
-Dotfiles			,^checkout(edit3),subl3
+Comandos		,^checkout(edit2),subl3
+Dotfiles		,^checkout(edit3),subl3
 ^tag(edit2)
-Select				,~/dotfiles/winfuncs.sh select,
-Tile                ,~/dotfiles/winfuncs.sh tile,
-Tile two            ,~/dotfiles/winfuncs.sh tiletwo,
-Tile two left       ,~/dotfiles/winfuncs.sh tiletwol,
-Tile two right      ,~/dotfiles/winfuncs.sh tiletwor,
-Tile three          ,~/dotfiles/winfuncs.sh tilethree,
-Tile three vertical ,~/dotfiles/winfuncs.sh tilethreev,
-Stack two           ,~/dotfiles/winfuncs.sh stacktwo,
-Cascade             ,~/dotfiles/winfuncs.sh cascade,
-Show desktop        ,~/dotfiles/winfuncs.sh showdesktop,
+Select			,~/dotfiles/winfuncs.sh select,
+Tile			,~/dotfiles/winfuncs.sh tile,
+Tile two		,~/dotfiles/winfuncs.sh tiletwo,
+Tile two left		,~/dotfiles/winfuncs.sh tiletwol,
+Tile two right		,~/dotfiles/winfuncs.sh tiletwor,
+Tile three		,~/dotfiles/winfuncs.sh tilethree,
+Tile three vertical	,~/dotfiles/winfuncs.sh tilethreev,
+Stack two		,~/dotfiles/winfuncs.sh stacktwo,
+Cascade			,~/dotfiles/winfuncs.sh cascade,
+Show desktop		,~/dotfiles/winfuncs.sh showdesktop,
 
 ^tag(edit3)
-Winfuncs.sh			,subl3 ~/Downloads/dotfiles/winfuncs.sh,winfuncs
-Kitty.conf			,subl3 ~/.config/kitty/kitty.conf,kitty
-Conkyrc				,subl3 ~/.conkyrc,conky
-Bashrc				,subl3 ~/.bashrc,bash
-Myclirc				,subl3 ~/.myclirc, mycly
+Winfuncs.sh		,subl3 ~/Downloads/dotfiles/winfuncs.sh,winfuncs
+Kitty.conf		,subl3 ~/.config/kitty/kitty.conf,kitty
+Conkyrc			,subl3 ~/.conkyrc,conky
+Bashrc			,subl3 ~/.bashrc,bash
+Myclirc			,subl3 ~/.myclirc, mycly
 
 ^tag(apps)
