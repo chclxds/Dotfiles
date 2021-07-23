@@ -43,7 +43,7 @@ conky.config = {
     gap_y = 0,
     minimum_height = 5,
     minimum_width = 5,
-    maximum_width = 382,
+    maximum_width = 400,
     net_avg_samples = 2,
     no_buffers = true,
     out_to_console = false,
@@ -93,7 +93,7 @@ ${color blue}Networking: $alignr$color${wireless_essid wlp2s0}
 ##${color blue} External IP $alignr$color ${exec curl -s www.icanhazip.com}
 ${color blue} Internal IP $alignr$color ${addr wlp2s0}
 $hr
-${color blue}Name                 PID   CPU%   MEM%
+${color blue}Name${alignr}PID   CPU%   MEM%
 ${color} ${top name 1} $color ${top pid 1} ${top cpu 1} ${top mem 1}
 ${color} ${top name 2} $color ${top pid 2} ${top cpu 2} ${top mem 2}
 ${color} ${top name 3} $color ${top pid 3} ${top cpu 3} ${top mem 3}
@@ -110,9 +110,8 @@ ${color blue}Service/Port ${alignr}Remote Address$color
 # ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 6}
 # ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 7}
 $hr
-#${color blue} Cotação $alignr$color
-${color blue}Dolar C. Compra: $alignr$color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=1&fields=bidvalue,date" | jq .docs[0].bidvalue} $alignr${color blue}Venda: $alignr$color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=1&fields=askvalue,date" | jq .docs[0].askvalue}
-${color blue}Dolar T. Compra: $alignr$color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=3&fields=bidvalue,date" | jq .docs[0].bidvalue} $alignr${color blue}Venda: $alignr$color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=3&fields=askvalue,date" | jq .docs[0].askvalue}
-${color blue}Euro: $alignr$color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=bidvalue,date" | jq .docs[0].bidvalue}
-${color blue}Libra: $alignr$color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=7&fields=bidvalue,date" | jq .docs[0].bidvalue}
+${color blue}Moeda $alignr Compra    Venda
+${color blue} USD Comercial: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=1&fields=bidvalue,date" | jq .docs[0].bidvalue}  $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=1&fields=askvalue,date" | jq .docs[0].askvalue}
+${color blue} USD Turismo: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=3&fields=bidvalue,date" | jq .docs[0].bidvalue}   $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=3&fields=askvalue,date" | jq .docs[0].askvalue}
+${color blue} EUR: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=bidvalue,date" | jq .docs[0].bidvalue}   $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=askvalue,date" | jq .docs[0].askvalue}
 ]]
