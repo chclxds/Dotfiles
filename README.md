@@ -1,7 +1,7 @@
 # Dotfiles
 
 ### Conky
-![alt text](https://github.com/chclxds/Dotfiles/blob/master/imagens/conky.png)
+![alt text](https://github.com/chclxds/Dotfiles/blob/master/imagens/conky2.png)
 
 ### jgmenu
 ![alt text](https://github.com/chclxds/Dotfiles/blob/master/imagens/jg%20menu.png)
