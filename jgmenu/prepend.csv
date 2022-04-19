@@ -7,7 +7,7 @@ Run Program,xfrun4
 Terminal		,kitty,utilities-terminal
 Navegador Web	,firefox,firefox
 Ger. Arquivos	,thunar,system-file-manager
-Editor de Texto	,subl3,text-editor
+Editor de Texto	,subl,text-editor
 Reprodutor Mídia,smplayer,multimedia-player
 ^sep()
 Aplicativos		,^checkout(apps)
