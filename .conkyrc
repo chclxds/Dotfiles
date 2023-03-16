@@ -89,8 +89,8 @@ ${color blue}File systems:
  / $color${fs_used /}/${fs_size /} ${fs_bar 12 /}
 ${color blue} home $color${fs_used /home}/${fs_size /home} ${fs_bar 12 /home}
 ${color blue}Networking: $alignr$color${wireless_essid wlan0}
-${color blue} Up: $color ${upspeed wlan0}$alignr${upspeedgraph wlan0 12,180}
-${color blue} Down: $color ${downspeed wlan0}$alignr${downspeedgraph wlan0 12,180}
+${color blue} Up: $color ${upspeed wlan0}$alignr${upspeedgraph wlan0 12,180 DimGray 0000}
+${color blue} Down: $color ${downspeed wlan0}$alignr${downspeedgraph wlan0 12,180 DimGray 0000}
 ##${color blue} External IP $alignr$color ${exec curl -s www.icanhazip.com}
 ${color blue} Internal IP $alignr$color ${addr wlan0}
 $hr
@@ -108,7 +108,7 @@ ${color} ${top_mem name 1} $alignr ${top_mem mem_res 1}
 ${color} ${top_mem name 2} $alignr ${top_mem mem_res 2}
 ${color} ${top_mem name 3} $alignr ${top_mem mem_res 3}
 ${color} ${top_mem name 4} $alignr ${top_mem mem_res 4}
-${color} ${top_mem name 5} $alignr ${top_mem mem_res 5}
+#${color} ${top_mem name 5} $alignr ${top_mem mem_res 5}
 #${color} ${top_mem name 6} $alignr ${top_mem mem_res 6}
 #${color} ${top_mem name 7} $alignr ${top_mem mem_res 7}
 $hr
@@ -117,7 +117,7 @@ ${color blue}Service/Port ${alignr}Remote Address$color
  ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 1}
  ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 2}
  ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 3}
- ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 4}
+#${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 4}
 # ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 5}
 # ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 6}
 # ${tcp_portmon 1 65535 lservice 7} ${alignr}${tcp_portmon 1 65535 rhost 7}
@@ -125,5 +125,5 @@ $hr
 ${color blue}Moeda $alignr Compra     Venda
 ${color blue} USD Comercial: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=1&fields=bidvalue,date" | jq .docs[0].bidvalue}    $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=1&fields=askvalue,date" | jq .docs[0].askvalue}
 ${color blue} USD Turismo: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=3&fields=bidvalue,date" | jq .docs[0].bidvalue}    $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=3&fields=askvalue,date" | jq .docs[0].askvalue}
-${color blue} EUR: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=bidvalue,date" | jq .docs[0].bidvalue}    $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=askvalue,date" | jq .docs[0].askvalue}
+#${color blue} EUR: $alignr $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=bidvalue,date" | jq .docs[0].bidvalue}    $color ${exec curl -s "https://api.cotacoes.uol.com/currency/intraday/list?currency=5&fields=askvalue,date" | jq .docs[0].askvalue}
 ]]
