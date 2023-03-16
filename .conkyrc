@@ -55,7 +55,7 @@ conky.config = {
     own_window_argb_visual = true,
     own_window_class = 'Conky',
     own_window_colour = '#000000',
-    own_window_hints = 'undecorated,below,sticky,skip_taskbar',
+    own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
     own_window_type = 'normal',
     own_window_transparent = true,
     show_graph_range = false,
@@ -68,7 +68,7 @@ conky.config = {
 }
 
 conky.text = [[
-${color blue}Info:$color ${scroll 32 ~CHCLXDS~ - $sysname $nodename $kernel}
+${color blue}Info:$color ${scroll 31 ~CHCLXDS~ - $sysname $nodename $kernel}
 $hr
 ${color blue}Date:$color ${time %d/%m/%Y}$alignr${color blue}Time:$color ${time %H:%M:%S}
 ${color blue}Uptime:$color $uptime
@@ -89,8 +89,8 @@ ${color blue}File systems:
  / $color${fs_used /}/${fs_size /} ${fs_bar 12 /}
 ${color blue} home $color${fs_used /home}/${fs_size /home} ${fs_bar 12 /home}
 ${color blue}Networking: $alignr$color${wireless_essid wlan0}
-${color blue} Up: $color ${upspeed wlan0}$alignr${upspeedgraph wlan0 12,180 DimGray 0000}
-${color blue} Down: $color ${downspeed wlan0}$alignr${downspeedgraph wlan0 12,180 DimGray 0000}
+${color blue} Up: $color ${upspeed wlan0}$alignr${upspeedgraph wlan0 12,180 black white}
+${color blue} Down: $color ${downspeed wlan0}$alignr${downspeedgraph wlan0 12,180 black white}
 ##${color blue} External IP $alignr$color ${exec curl -s www.icanhazip.com}
 ${color blue} Internal IP $alignr$color ${addr wlan0}
 $hr
